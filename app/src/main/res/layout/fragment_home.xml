@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#94FF9B"
+        >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="WhatsApp"
+        app:menu="@menu/menu"
+        />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="280dp"
+            android:src="@drawable/baseline_camera_alt_24"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Chats"
+        />
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Status"
+        />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+
+
+
+<!--        <TextView-->
+<!--        android:id="@+id/txt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:layout_marginLeft="80dp"-->
+
+<!--        android:text="Search"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src=""-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:layout_marginLeft="300dp"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/txt"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:text="New Releses"-->
+<!--        android:textSize="20dp"-->
+
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="MORE"-->
+<!--        android:layout_toRightOf="@+id/txt2"-->
+<!--        android:layout_marginTop="125dp"-->
+<!--        android:layout_marginLeft="150dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="15dp"-->
+<!--        />-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv1"-->
+<!--        android:layout_width="145dp"-->
+<!--        android:layout_height="145dp"-->
+<!--        android:layout_below="@+id/txt2"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:background="@drawable/model">-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv2"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="145dp"-->
+<!--        android:layout_marginLeft="21dp"-->
+<!--        android:layout_marginTop="165dp"-->
+<!--        android:layout_toRightOf="@+id/rltv1"-->
+<!--        android:background="@drawable/hhhg">-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv4"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_marginTop="310dp"-->
+<!--        android:layout_toRightOf="@+id/rltv3"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt6"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="Aliquam"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt7"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="One Republic"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_below="@+id/txt6"-->
+<!--            />-->
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/img3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:menu="@menu/menu"-->
+<!--            android:layout_marginLeft="95dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            />-->
+<!--    </RelativeLayout>-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv3"-->
+<!--        android:layout_width="145dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_below="@+id/rltv1"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Mauris sagi.."-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/txt5"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Kodaline"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_below="@+id/txt4"-->
+<!--            />-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/tlb1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:menu="@menu/menu"-->
+<!--            android:layout_marginLeft="95dp"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt8"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/rltv1"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="62dp"-->
+<!--        android:text="Recommended"-->
+<!--        android:textSize="20dp"-->
+
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt9"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/rltv3"-->
+<!--        android:layout_marginLeft="280dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:text="MORE"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv5"-->
+<!--        android:layout_width="110dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        android:layout_below="@+id/txt8"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:background="@drawable/model"-->
+<!--        >-->
+
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv6"-->
+<!--        android:layout_width="110dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_below="@+id/rltv5"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt10"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Curabit..."-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv9"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        android:layout_marginLeft="140dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:layout_below="@+id/txt9"-->
+<!--        android:background="@drawable/hhhg">-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv10"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginLeft="140dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_below="@+id/rltv9"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt11"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Quisque"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+
+<!--    &lt;!&ndash;    newwwwwwwwwwwwwwwwww&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv11"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        android:layout_marginLeft="250dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:layout_below="@+id/txt9"-->
+<!--        android:background="@drawable/hhhg">-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rltv12"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginLeft="250dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_below="@+id/rltv11"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt12"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="Alique..."-->
+<!--            android:textStyle="bold" />-->
+
+<!--    </RelativeLayout>-->
+
+
+</LinearLayout>
